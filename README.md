@@ -24,12 +24,24 @@ Mas antes de iniciar devemos criar um Glossário Comercial/Dicionário da empres
 
 Obs.: Algumas informações foram modificadas para poderem ser divulgadas.
 
-## Fases do Projeto.
+# Fases do Projeto.
 
-# 1 Fase - Criação do Dicionário.
+## 1 Fase - Criação do Dicionário.
 
 Após reunião com os colaboradores da Prime Park foi criado um dicionário para poder dar seguimento ao projeto de banco de dados.
 
-# 2 Fase - Modelagem dos Dados.
+## 2 Fase - Modelagem dos Dados.
+
+Conforme reunião com o colaboradores da Prime Park podemo reunir algumas regras do negócio:
+
+- Que muito embora a Prime Park administre estacionamentos de terceiros, sua única fonte de receita esta no clientes que estacionam seus veículos.
+- Cada estacionamento possui sua peculiaridade própria. Como número de vagas, tabela de preço, tipo de cliente, número de colaboradores, meio de cobrança e horário de funcionamento.
+- Todas as fontes de receita de cada estacionamento são registrados pela Matriz da empresa.
+- As fontes de receita de cada estacionamento são divididas em: Clientes Rotativos, Clientes Mensalistas e Convênios.
+- A Matriz também é responsável pelo pagamento das desepesa de todos os estacionamentos admininstrados, bem como a folha de pagamento dos colaboradores de todos estacionamentos.
+- A Matriz também é responsável pelo registro e conferência dos pagamentos e registros de clientes mensalistas e conveniados.
+
+
+
 
 
