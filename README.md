@@ -30,7 +30,7 @@ Obs.: Algumas informações foram modificadas para poderem ser divulgadas.
 
 Após reunião com os colaboradores da Prime Park foi criado um dicionário para poder dar seguimento ao projeto de banco de dados.
 
-## 2 Fase - Modelagem dos Dados.
+## 2 Fase - Regras do negócio.
 
 Conforme reunião com o colaboradores da Prime Park podemo reunir algumas regras do negócio:
 
@@ -41,6 +41,11 @@ Conforme reunião com o colaboradores da Prime Park podemo reunir algumas regras
 - A Matriz também é responsável pelo pagamento das desepesa de todos os estacionamentos admininstrados, bem como a folha de pagamento dos colaboradores de todos estacionamentos.
 - A Matriz também é responsável pelo registro e conferência dos pagamentos e registros de clientes mensalistas e conveniados.
 
+## 3 Fase - Modelagem de Dados.
+
+Com base nas informações fornecidas pelos colaboradores da Prime Park criamos a seguinte modelagem dos dados:
+
+![image](https://github.com/PedroMoeziaJr/Banco_de_Dados_Prime_Park/assets/112977342/625fe1ae-299e-4b25-a215-a58b8be958d5)
 
 
 
