@@ -9,9 +9,7 @@ Crição de Banco de dados para empresa Prime Park com base no seu modelo de neg
 | :rocket: URL         | https://url-deploy.com.br
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
-
-![image](https://github.com/PedroMoeziaJr/Banco_de_Dados_Prime_Park/assets/112977342/037bf9f6-af3f-40df-9eb2-a4a09793c8ee)
+![image](https://github.com/PedroMoeziaJr/Banco_de_Dados_Prime_Park/assets/112977342/037bf9f6-af3f-40df-9eb2-a4a09793c8ee#vitrinedev)
 
 ## Detalhes do projeto
 
