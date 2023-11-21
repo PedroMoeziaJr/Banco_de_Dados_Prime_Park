@@ -1,0 +1,87 @@
+
+CREATE TABLE ESTACIONAMENTO (
+                ID_Estacionamento INT IDENTITY NOT NULL,
+                Estacionamento VARCHAR(50) NOT NULL,
+                N_Vagas INT,
+                Tabela_Preço FLOAT,
+                Valor para Cliente Mensalista INT,
+                Hora_Abertura DATETIME,
+                Hora_Fechamento DATETIME,
+                N_de_Funcionarios INT,
+                Status BINARY(3) NOT NULL,
+                CONSTRAINT Estacionamento_pk PRIMARY KEY (ID_Estacionamento)
+);
+
+CREATE TABLE Entradas (
+                ID_Entrada INT IDENTITY NOT NULL,
+                ID_Estacionamento INT NOT NULL,
+                Data_Entrada DATETIME NOT NULL,
+                Meio_Entrada FLOAT NOT NULL,
+                Tipo_Cliente VARCHAR(20) NOT NULL,
+                Qtd_Entradas INT NOT NULL,
+                Valor_Entrada INT NOT NULL,
+                Fundo_de_Caixa INT NOT NULL,
+                CONSTRAINT ID_Entrada PRIMARY KEY (ID_Entrada, ID_Estacionamento)
+);
+
+CREATE TABLE Cliente_Mensalista  (
+                ID_Cliente_Mensalista INT NOT NULL,
+                ID_Estacionamento INT NOT NULL,
+                Nome_Cliente VARCHAR(50) NOT NULL,
+                Data_Ingresso DATETIME NOT NULL,
+                CPF_CNPJ INT NOT NULL,
+                Endereço VARCHAR(50),
+                Email_Mensalista VARCHAR(50) NOT NULL,
+                CEP INT,
+                Telefone INT,
+                Valor_Mensalista INT NOT NULL,
+                Placa_Veiculo VARCHAR NOT NULL,
+                Valor_Desconto INT NOT NULL,
+                Data_Vencimento DATETIME NOT NULL,
+                Status BINARY(10) NOT NULL,
+                CONSTRAINT ID_Clinete PRIMARY KEY (ID_Cliente_Mensalista, ID_Estacionamento)
+);
+
+CREATE TABLE Pagamentos_Mensalistas (
+                ID_Pagamento_Mensalista INT IDENTITY NOT NULL,
+                ID_Cliente_Mensalista INT NOT NULL,
+                ID_Estacionamento INT NOT NULL,
+                Data_Pagamento_Mensalista DATETIME NOT NULL,
+                Valor_Pagamento_Mensalista INT NOT NULL,
+                CONSTRAINT ID_Pagamentos_Mensalista PRIMARY KEY (ID_Pagamento_Mensalista, ID_Cliente_Mensalista, ID_Estacionamento)
+);
+
+CREATE TABLE Despesas_Empresa (
+                ID_Despesa INT IDENTITY NOT NULL,
+                ID_Estacionamento INT NOT NULL,
+                Data_Pagamento DATETIME NOT NULL,
+                Valor_Despesa FLOAT NOT NULL,
+                Meio_Pagamento VARCHAR(10),
+                Tipo_Despesa VARCHAR(30) NOT NULL,
+                Recorrência BINARY(10) NOT NULL,
+                CONSTRAINT Id_Despesa PRIMARY KEY (ID_Despesa, ID_Estacionamento)
+);
+
+ALTER TABLE Despesas_Empresa ADD CONSTRAINT ESTACIONAMENTO_Despesas_Empresa_fk
+FOREIGN KEY (ID_Estacionamento)
+REFERENCES ESTACIONAMENTO (ID_Estacionamento)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+ALTER TABLE Cliente_Mensalista  ADD CONSTRAINT ESTACIONAMENTO_Cliente_Mensalista__fk
+FOREIGN KEY (ID_Estacionamento)
+REFERENCES ESTACIONAMENTO (ID_Estacionamento)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+ALTER TABLE Entradas ADD CONSTRAINT ESTACIONAMENTO_Entradas_fk
+FOREIGN KEY (ID_Estacionamento)
+REFERENCES ESTACIONAMENTO (ID_Estacionamento)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+ALTER TABLE Pagamentos_Mensalistas ADD CONSTRAINT Cliente_Mensalista__Pagamentos_Mensalistas_fk
+FOREIGN KEY (ID_Cliente_Mensalista, ID_Estacionamento)
+REFERENCES Cliente_Mensalista  (ID_Cliente_Mensalista, ID_Estacionamento)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
