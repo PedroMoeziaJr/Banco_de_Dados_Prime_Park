@@ -47,6 +47,10 @@ Com base nas informações fornecidas pelos colaboradores da Prime Park criamos 
 
 ![image](https://github.com/PedroMoeziaJr/Banco_de_Dados_Prime_Park/assets/112977342/625fe1ae-299e-4b25-a215-a58b8be958d5)
 
+## 4 Fase - Criação do Banco de Dados.
+
+A partir dessa modelagem criamos o código em linguagem SQL em anexo.
+
 
 
 
