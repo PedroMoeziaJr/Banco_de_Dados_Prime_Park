@@ -13,38 +13,40 @@ Crição de Banco de dados para empresa Prime Park com base no seu modelo de neg
 
 ## Detalhes do projeto
 
-A Prime Park é uma empresa administradora de estacionamentos dos mais variados portes. Grande parte dos estacionamentos administrados pela Prime Park possuem um sistema autoamtizado em sua estrutura.
+A Prime Park é uma empresa especializada na administração de estacionamentos de diversos portes. Muitos dos estacionamentos gerenciados pela empresa contam com sistemas automatizados em suas operações.
 
-Porém, no que tange a administração em si ainda não existe um sistema sólido informatizado para futuramente podermos criar um modelo de BI.
+Entretanto, no que diz respeito à gestão administrativa, ainda não há um sistema informatizado robusto que permita, no futuro, a criação de modelos de Business Intelligence (BI).
 
-Por isso, o primeiro passo é criar um banco de dados a partir do modelo de negócio da Prime Park.
+Diante desse cenário, o primeiro passo é desenvolver um banco de dados baseado no modelo de negócios da Prime Park.
 
-Mas antes de iniciar devemos criar um Glossário Comercial/Dicionário da empresa.
+Antes de iniciar o projeto, foi necessário elaborar um Glossário Comercial/Dicionário da empresa para padronizar os conceitos e garantir alinhamento entre todas as partes envolvidas.
 
-Obs.: Algumas informações foram modificadas para poderem ser divulgadas.
+Nota: Algumas informações foram adaptadas para que possam ser divulgadas publicamente.
 
 # Fases do Projeto.
 
 ## 1 Fase - Criação do Dicionário.
 
-Após reunião com os colaboradores da Prime Park foi criado um dicionário para poder dar seguimento ao projeto de banco de dados.
+Após uma reunião com os colaboradores da Prime Park, foi elaborado um dicionário comercial. Esse documento serviu como base para padronizar termos e conceitos, permitindo o avanço estruturado no desenvolvimento do banco de dados.
 
 ## 2 Fase - Regras do negócio.
 
-Conforme reunião com o colaboradores da Prime Park podemo reunir algumas regras do negócio:
+Conforme discutido em reunião com os colaboradores da Prime Park, foram definidas algumas diretrizes essenciais para o funcionamento da empresa:
 
-- Que muito embora a Prime Park administre estacionamentos de terceiros, sua única fonte de receita esta no clientes que estacionam seus veículos.
-- Cada estacionamento possui sua peculiaridade própria. Como número de vagas, tabela de preço, tipo de cliente, número de colaboradores, meio de cobrança e horário de funcionamento.
-- Todas as fontes de receita de cada estacionamento são registrados pela Matriz da empresa.
-- As fontes de receita de cada estacionamento são divididas em: Clientes Rotativos, Clientes Mensalistas e Convênios.
-- A Matriz também é responsável pelo pagamento das desepesa de todos os estacionamentos admininstrados, bem como a folha de pagamento dos colaboradores de todos estacionamentos.
-- A Matriz também é responsável pelo registro e conferência dos pagamentos e registros de clientes mensalistas e conveniados.
+Embora a Prime Park administre estacionamentos de terceiros, sua principal fonte de receita provém dos clientes que estacionam seus veículos.
+Cada estacionamento apresenta características únicas, como número de vagas, tabela de preços, tipo de cliente, quantidade de colaboradores, meio de cobrança e horário de funcionamento.
+A Matriz da empresa é responsável por registrar todas as fontes de receita de cada estacionamento.
+As fontes de receita de cada estacionamento são categorizadas em três grupos: Clientes Rotativos, Clientes Mensalistas e Convênios.
+A Matriz também é encarregada do pagamento das despesas de todos os estacionamentos administrados, bem como da gestão da folha de pagamento dos colaboradores de cada estacionamento.
+A Matriz tem a responsabilidade de registrar e conferir os pagamentos dos clientes mensalistas e conveniados.
 
 ## 3 Fase - Modelagem de Dados.
 
-Com base nas informações fornecidas pelos colaboradores da Prime Park criamos a seguinte modelagem dos dados:
+Com base nas informações fornecidas pelos colaboradores da Prime Park, desenvolvemos a seguinte modelagem dos dados:
 
 ![image](https://github.com/PedroMoeziaJr/Banco_de_Dados_Prime_Park/assets/112977342/625fe1ae-299e-4b25-a215-a58b8be958d5)
+
+![image](https://github.com/user-attachments/assets/863e2676-a8c0-4bfb-bd54-2897ce4aa721)
 
 ## 4 Fase - Criação do Banco de Dados.
 
